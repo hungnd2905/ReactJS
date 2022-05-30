@@ -1,7 +1,21 @@
+import React, { useState } from "react";
 function App() {
+  const [userInput, setUserInput] = useState({
+    enteredTitle: "",
+    enteredAmount: "",
+    enteredDate: "",
+  });
+
+  const clickEventHandler = () => {
+    setUserInput((prevState) => {
+      return { ...prevState, enteredTitle: "abc" };
+    });
+
+    console.log(userInput);
+  };
   return (
     <div>
-      <h2>Let's get started!</h2>
+      <button onClick={clickEventHandler}>CLICKHERE</button>
     </div>
   );
 }
