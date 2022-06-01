@@ -27,6 +27,14 @@ export const MuiDrawer = () => {
             Side Panel
           </Typography>
         </Box>
+        <Box p={2} width="250px" textAlign="center" role="presentation">
+          <Typography variant="body1" component="div">
+            Tab 1
+          </Typography>
+          <Typography variant="body1" component="div">
+            Tab 2
+          </Typography>
+        </Box>
       </Drawer>
     </>
   );
